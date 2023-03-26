@@ -1,0 +1,15 @@
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/bin/Debug/net7.0/Numericas
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/bin/Debug/net7.0/Numericas.deps.json
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/bin/Debug/net7.0/Numericas.runtimeconfig.json
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/bin/Debug/net7.0/Numericas.dll
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/bin/Debug/net7.0/Numericas.pdb
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.csproj.AssemblyReference.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.AssemblyInfoInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.AssemblyInfo.cs
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.csproj.CoreCompileInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.dll
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/refint/Numericas.dll
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.pdb
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/Numericas.genruntimeconfig.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.1-Numericas/obj/Debug/net7.0/ref/Numericas.dll

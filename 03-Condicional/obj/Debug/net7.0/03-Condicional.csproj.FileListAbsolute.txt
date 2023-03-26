@@ -1,0 +1,15 @@
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/bin/Debug/net7.0/03-Condicional
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/bin/Debug/net7.0/03-Condicional.deps.json
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/bin/Debug/net7.0/03-Condicional.runtimeconfig.json
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/bin/Debug/net7.0/03-Condicional.dll
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/bin/Debug/net7.0/03-Condicional.pdb
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.csproj.AssemblyReference.cache
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.AssemblyInfoInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.AssemblyInfo.cs
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.csproj.CoreCompileInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.dll
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/refint/03-Condicional.dll
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.pdb
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/03-Condicional.genruntimeconfig.cache
+/home/pedro_linux/MeusProjetos/C#-study/03-Condicional/obj/Debug/net7.0/ref/03-Condicional.dll

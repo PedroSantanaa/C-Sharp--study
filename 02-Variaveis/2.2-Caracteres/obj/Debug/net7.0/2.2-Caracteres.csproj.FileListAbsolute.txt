@@ -1,0 +1,15 @@
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/bin/Debug/net7.0/2.2-Caracteres
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/bin/Debug/net7.0/2.2-Caracteres.deps.json
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/bin/Debug/net7.0/2.2-Caracteres.runtimeconfig.json
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/bin/Debug/net7.0/2.2-Caracteres.dll
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/bin/Debug/net7.0/2.2-Caracteres.pdb
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.csproj.AssemblyReference.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.AssemblyInfoInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.AssemblyInfo.cs
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.csproj.CoreCompileInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.dll
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/refint/2.2-Caracteres.dll
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.pdb
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/2.2-Caracteres.genruntimeconfig.cache
+/home/pedro_linux/MeusProjetos/C#-study/02-Variaveis/2.2-Caracteres/obj/Debug/net7.0/ref/2.2-Caracteres.dll
