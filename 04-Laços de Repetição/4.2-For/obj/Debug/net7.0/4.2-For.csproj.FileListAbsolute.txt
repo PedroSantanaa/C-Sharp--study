@@ -1,0 +1,15 @@
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.csproj.AssemblyReference.cache
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.GeneratedMSBuildEditorConfig.editorconfig
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.AssemblyInfoInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.AssemblyInfo.cs
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.csproj.CoreCompileInputs.cache
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/bin/Debug/net7.0/4.2-For
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/bin/Debug/net7.0/4.2-For.deps.json
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/bin/Debug/net7.0/4.2-For.runtimeconfig.json
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/bin/Debug/net7.0/4.2-For.dll
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/bin/Debug/net7.0/4.2-For.pdb
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.dll
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/refint/4.2-For.dll
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.pdb
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/4.2-For.genruntimeconfig.cache
+/home/pedro_linux/MeusProjetos/C#-study/04-Laços de Repetição/4.2-For/obj/Debug/net7.0/ref/4.2-For.dll
