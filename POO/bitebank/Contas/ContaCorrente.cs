@@ -1,17 +1,18 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using bitebank.Titular;
 
-namespace _01_bitebank
+namespace bitebank.Contas
 {
     public class ContaCorrente
-
     {
         public int numeroAgencia;
         public string conta;
-        public string titular;
         public double saldo;
+
+        public Cliente titular;
         
         public void Depositar(double valor){
             this.saldo+=valor;
@@ -20,11 +21,11 @@ namespace _01_bitebank
             if(valor<=this.saldo){
                 this.saldo-=valor;
                 return true;
-                }
-                else{
+            }
+            else{
                     
-                    return false;
-                }
+                return false;
+            }
             
         }
 
@@ -39,7 +40,7 @@ namespace _01_bitebank
 
         }
         public void Show(){
-            Console.WriteLine("Informações da conta: " + this.titular + " " + this.numeroAgencia + " " + this.conta + " " + this.saldo);
+            Console.WriteLine("Informações da conta: "+this.titular+ " "+ this.numeroAgencia+" "+this.conta+" "+this.saldo);
         }
     }
 }
