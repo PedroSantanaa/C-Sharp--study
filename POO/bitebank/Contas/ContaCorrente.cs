@@ -1,18 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using bitebank.Titular;
+﻿using bitebank.Titular;
 
 namespace bitebank.Contas
 {
     public class ContaCorrente
     {
-        public int numeroAgencia;
-        public string conta;
-        public double saldo;
+        private int numeroAgencia;
 
-        public Cliente titular;
+        public int Numeroagencia
+        {
+            get => numeroAgencia;
+            set {
+                if (value > 0) {
+                    numeroAgencia = value; }
+            }
+        }
+        public string Conta { get; set; }
+        private double saldo;
+
+        public Cliente Titular { get; set; }
         
         public void Depositar(double valor){
             this.saldo+=valor;
@@ -39,8 +44,20 @@ namespace bitebank.Contas
             }
 
         }
+
+        public void SetSaldo(double valor)
+        {
+            if (valor < 0)
+            {
+                return;
+            }
+
+            saldo = valor;
+        }
+
+        public double GetSaldo() => saldo;
         public void Show(){
-            Console.WriteLine("Informações da conta: "+this.titular+ " "+ this.numeroAgencia+" "+this.conta+" "+this.saldo);
+            Console.WriteLine("Informações da conta: "+Titular+ " "+ this.numeroAgencia+" "+Conta+" "+this.saldo);
         }
     }
 }
