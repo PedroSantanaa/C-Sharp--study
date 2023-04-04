@@ -1,17 +1,23 @@
 namespace bitebank_adm.Funcionarios;
 
-public class Funcionario
+public abstract class Funcionario
 {
     public string Nome { get; set; }
-    public string Cpf { get; set; }
-    public double Salario { get; set; }
+    public string Cpf { get; private set; }
+    public double Salario { get; protected set; }
 
+    public static int TotalDeFuncionarios { get; private set; }
+
+    public Funcionario(string cpf,double salario)
+    {
+        Cpf = cpf;
+        Salario = salario;
+        TotalDeFuncionarios++;
+    }
 
     //metodos
-    public double GetBonificacao()
-    {
-        return Salario * 0.1;
-    }
-    
-    
+    public abstract double GetBonificacao();
+    public abstract void AumentarSalario();
+
+
 }

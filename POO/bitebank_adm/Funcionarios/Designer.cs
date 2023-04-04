@@ -1,23 +1,21 @@
 namespace bitebank_adm.Funcionarios;
 
-public class Diretor:Funcionario
+public class Designer:Funcionario
 {
-    public Diretor(string cpf):base(cpf,5000)
+    public Designer(string cpf):base(cpf,3000)
     {
         
-        Console.WriteLine("Criando um Diretor/a!!!");
+        Console.WriteLine("Criando um Designer!!!");
     }
-
 
     //metodos
     public override double GetBonificacao()
     {
-        return Salario*0.5;
+        return Salario*0.17;
     }
     
     public override void AumentarSalario()
     {
-        Salario *=  1.15;
+        Salario *=  1.11;
     }
-
 }
