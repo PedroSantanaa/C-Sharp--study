@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitebank", "bitebank\bitebank.csproj", "{285D663A-30EA-4DD6-B339-8057A6A700D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bitebank_adm", "bitebank_adm\bitebank_adm.csproj", "{DABB1EB6-BC38-4699-869C-1DDAD3956FBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{285D663A-30EA-4DD6-B339-8057A6A700D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{285D663A-30EA-4DD6-B339-8057A6A700D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{285D663A-30EA-4DD6-B339-8057A6A700D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DABB1EB6-BC38-4699-869C-1DDAD3956FBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DABB1EB6-BC38-4699-869C-1DDAD3956FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DABB1EB6-BC38-4699-869C-1DDAD3956FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DABB1EB6-BC38-4699-869C-1DDAD3956FBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
