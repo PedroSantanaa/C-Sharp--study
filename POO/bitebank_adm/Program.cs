@@ -1,4 +1,6 @@
 ﻿using bitebank_adm.Funcionarios;
+using bitebank_adm.Parcerias;
+using bitebank_adm.SistemaInterno;
 using bitebank_adm.Utilitario;
 
 #region MyRegion
@@ -55,4 +57,27 @@ void CalcularBonificacao()
 
     Console.WriteLine("Total de bonificação: "+gerenciador.TotalBonificacoes);
 }
-CalcularBonificacao();
+// CalcularBonificacao();
+
+void SistemaInterno()
+{
+    SistemaInterno sistema = new SistemaInterno();
+    Diretor ingrid = new Diretor("05697787");
+    ingrid.Nome = "Ingrid Novaes";
+    ingrid.Login = "ingrid@gmail.com";
+    ingrid.Senha = "123";
+
+    GerenteDeContas alberto = new GerenteDeContas("432432423");
+    alberto.Nome = "Alberto Magno";
+    alberto.Login = "alberto@gmail.com";
+    alberto.Senha = "321";
+
+    ParceiroComercial pedro = new ParceiroComercial();
+    pedro.Login = "pedro@gmail.com";
+    pedro.Senha = "1234";
+
+    sistema.Logar(ingrid, "ingrid@gmail.com","123");
+    sistema.Logar(alberto, "alberto@gmail.com","123");
+    sistema.Logar(pedro, "pedro@gmail.com", "1234");
+}
+SistemaInterno();

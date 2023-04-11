@@ -1,11 +1,14 @@
+using bitebank_adm.SistemaInterno;
+
 namespace bitebank_adm.Funcionarios;
 
-public class Diretor:Funcionario
+public class Diretor:FuncionarioAutenticavel
 {
+    
     public Diretor(string cpf):base(cpf,5000)
     {
         
-        Console.WriteLine("Criando um Diretor/a!!!");
+        Console.WriteLine("Criando um Diretor!!!");
     }
 
 

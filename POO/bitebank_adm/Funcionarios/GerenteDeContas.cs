@@ -1,6 +1,8 @@
+using bitebank_adm.SistemaInterno;
+
 namespace bitebank_adm.Funcionarios;
 
-public class GerenteDeContas:Funcionario
+public class GerenteDeContas:FuncionarioAutenticavel
 {
     public GerenteDeContas(string cpf):base(cpf,4000)
     {
@@ -18,4 +20,5 @@ public class GerenteDeContas:Funcionario
     {
         Salario *=  1.05;
     }
+
 }
