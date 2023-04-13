@@ -1,4 +1,5 @@
-﻿using bitebank.Titular;
+﻿using bitebank.Excecoes;
+using bitebank.Titular;
 
 namespace bitebank.Contas
 {
@@ -6,6 +7,7 @@ namespace bitebank.Contas
     {
         private int _numeroAgencia;
         public static int TotalContasCriadas { get; private set; }
+        public static double TaxaDeOperacao { get; private set; }
 
         public int Numeroagencia
         {
@@ -24,6 +26,21 @@ namespace bitebank.Contas
         {
             Numeroagencia = numeroAgencia;
             Conta = numeroConta;
+            if (numeroAgencia<=0)
+            {
+                throw new ArgumentException("Numero de agencia menor ou igual a zero!!",nameof(numeroAgencia));
+                
+            }
+            /*try
+            {
+                TaxaDeOperacao = 30 / TotalContasCriadas;
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Ocorreu um erro, não é possivel fazer uma divisao por 0");
+                
+            }*/
+            
             TotalContasCriadas++;
         }
         
@@ -38,7 +55,7 @@ namespace bitebank.Contas
                 return true;
             }
 
-            return false;
+            throw new SaldoInsuficienteException("Saldo Insuficiente para a operação");
 
         }
 
