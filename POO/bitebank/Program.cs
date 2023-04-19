@@ -67,16 +67,17 @@ void Excecoes()
     Console.WriteLine(ContaCorrente.TaxaDeOperacao);
     try
     {
-        ContaCorrente conta2 = new ContaCorrente(278, "1234-x");
-        conta2.SetSaldo(100);
-        conta2.Saque(50);
-        Console.WriteLine(conta2.GetSaldo());
-        conta2.Saque(60);
-        Console.WriteLine(conta2.GetSaldo());
-    }
+        ContaCorrente conta2 = new ContaCorrente(0, "1234-x");
+    //     conta2.SetSaldo(100);
+    //     conta2.Saque(50);
+    //     Console.WriteLine(conta2.GetSaldo());
+    //     conta2.Saque(60);
+    //     Console.WriteLine(conta2.GetSaldo());
+     }
     catch (ArgumentException e)
     {
         Console.WriteLine("Não é possível criar uma conta com o número de agência menor ou igual a zero!");
+        Console.WriteLine(e.StackTrace);
         Console.WriteLine(e.Message);
         Console.WriteLine(e.ParamName);
     }
