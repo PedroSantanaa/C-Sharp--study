@@ -1,4 +1,5 @@
-﻿using bitebank.Contas;
+﻿using bitebank;
+using bitebank.Contas;
 using bitebank.Excecoes;
 using bitebank.Titular;
 
@@ -89,4 +90,26 @@ void Excecoes()
     
 }
 
-Excecoes();
+void Arquivos()
+{
+    LeitorDeArquivos arquivo = new LeitorDeArquivos("lolzin.txt");
+    try
+    {
+        arquivo.LerProximaLinha();
+        arquivo.LerProximaLinha();
+
+    }
+    catch (IOException e)
+    {
+        Console.WriteLine("Leitura de arquivo interrompida");
+        // Console.WriteLine(e);
+        // throw;
+    }
+    finally
+    {
+        arquivo.Fechar();
+    }
+}
+
+// Excecoes();
+Arquivos();
