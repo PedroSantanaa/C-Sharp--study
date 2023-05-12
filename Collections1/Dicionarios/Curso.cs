@@ -4,6 +4,8 @@ namespace SetsClasses;
 
 public class Curso
 {
+    //Dicionario
+    private IDictionary<int, Aluno> dicionarioAlunos = new Dictionary<int, Aluno>();
     private ISet<Aluno> alunos = new HashSet<Aluno>();
     private IList<Aula> aulas;
     private string cursoNome;
@@ -40,10 +42,34 @@ public class Curso
     public void Matricula(Aluno aluno)
     {
         alunos.Add(aluno);
+        dicionarioAlunos.Add(aluno.NumeroDeMatricula,aluno);
     }
 
     public bool EstaMatriculado(Aluno aluno)
     {
         return alunos.Contains(aluno);
+    }
+
+    public Aluno BuscaMatriculado(int numeroDeMatricula)
+    {
+        // foreach (var aluno in alunos)
+        // {
+        //     if (aluno.NumeroDeMatricula==numeroDeMatricula)
+        //     {
+        //         return aluno;
+        //     }
+        //
+        // }
+        //
+        // throw new Exception("Matricula não encontrado:" + numeroDeMatricula);
+        Aluno aluno = null;
+        // return dicionarioAlunos[numeroDeMatricula];
+        dicionarioAlunos.TryGetValue(numeroDeMatricula, out aluno);
+        return aluno;
+    }
+
+    public void SubtituirAluno(Aluno aluno)
+    {
+        dicionarioAlunos[aluno.NumeroDeMatricula] = aluno;
     }
 }

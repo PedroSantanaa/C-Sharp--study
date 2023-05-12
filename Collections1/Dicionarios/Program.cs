@@ -45,5 +45,23 @@ public class Program
         //o que ocorreu? a1 é equals a Tonini?
         Console.WriteLine("a1 é equals a Tonini?");
         Console.WriteLine(vanessa.Equals(tonini));
+        
+        Console.Clear();
+        //Buscar aluno por numero de matricula
+        Console.WriteLine("Quem é o aluno com a matricula 5617??");
+        Aluno aluno5617=cursoAlura.BuscaMatriculado(5617);
+        Console.WriteLine("Aluno 5617: "+aluno5617);
+        //Quem eh o aluno 5618??
+        Console.WriteLine("Quem é o aluno com a matricula 5618??");
+        Aluno aluno5618=cursoAlura.BuscaMatriculado(5618);
+        Console.WriteLine("Aluno 5618: "+aluno5618);
+        
+        //Substituir aluno
+        Aluno fabio = new Aluno("Fabio Gushiken", 5617);
+        cursoAlura.SubtituirAluno(fabio);
+        //Buscar aluno por numero de matricula
+        Console.WriteLine("Quem é o aluno com a matricula 5617??");
+        Console.WriteLine(cursoAlura.BuscaMatriculado(5617));
+        
     }
 }
