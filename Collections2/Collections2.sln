@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedDictionary", "SortedD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortedSet", "SortedSet\SortedSet.csproj", "{D9288C49-D795-455A-964D-0518944A5CEB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Array Multidimensional", "Array Multidimensional", "{D0C74B99-27EA-455E-9DC4-66C678808831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMultidimensional", "ArrayMultidimensional\ArrayMultidimensional.csproj", "{CB761583-FC69-462A-B70A-E8BC8592B05F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,10 +30,15 @@ Global
 		{D9288C49-D795-455A-964D-0518944A5CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9288C49-D795-455A-964D-0518944A5CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9288C49-D795-455A-964D-0518944A5CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB761583-FC69-462A-B70A-E8BC8592B05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB761583-FC69-462A-B70A-E8BC8592B05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB761583-FC69-462A-B70A-E8BC8592B05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB761583-FC69-462A-B70A-E8BC8592B05F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B880B6CD-3352-45DE-91F1-037914D5CAC6} = {58398022-2A5E-4D27-AAA0-4A97DA4F7811}
 		{7DB43B45-4876-4119-BEF8-26AB8B98F788} = {58398022-2A5E-4D27-AAA0-4A97DA4F7811}
 		{D9288C49-D795-455A-964D-0518944A5CEB} = {58398022-2A5E-4D27-AAA0-4A97DA4F7811}
+		{CB761583-FC69-462A-B70A-E8BC8592B05F} = {D0C74B99-27EA-455E-9DC4-66C678808831}
 	EndGlobalSection
 EndGlobal
