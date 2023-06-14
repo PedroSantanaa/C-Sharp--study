@@ -62,7 +62,7 @@ public class Curso
         // }
         //
         // throw new Exception("Matricula não encontrado:" + numeroDeMatricula);
-        Aluno aluno = null;
+        Aluno? aluno = null;
         // return dicionarioAlunos[numeroDeMatricula];
         dicionarioAlunos.TryGetValue(numeroDeMatricula, out aluno);
         return aluno;

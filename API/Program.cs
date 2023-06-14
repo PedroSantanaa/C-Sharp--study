@@ -8,22 +8,27 @@ var app = builder.Build();
 // app.MapGet("AddHeader",(HttpResponse response)=>{
 //   response.Headers.Add("Teste","Pedro Santana");
 //   return "Header adicionado para aparecer na mensagem";
+app.MapPost("/products",(Product product)=>{
 //   });
-app.MapPost("/saveproduct",(Product product)=>{
   ProductRepository.Add(product);
+  return Results.Created($"/products/{product.Code}",product);
 });
 //Route params /product/123
-app.MapGet("/getproduct/{code}",([FromRoute]string code)=>{
+app.MapGet("/products/{code}",([FromRoute]string code)=>{
   var product = ProductRepository.GetBy(code);
-  return product;
+  if(product!=null){
+    return Results.Ok(product);
+  }
+  return Results.NotFound();
 });
-app.MapPut("/editproduct/",(Product product)=>{
+app.MapPut("/products/",(Product product)=>{
   var productEdit = ProductRepository.GetBy(product.Code);
   productEdit.Name = product.Name;
-  return productEdit;
+  return Results.Ok(productEdit);
 });
-app.MapDelete("/deleteproduct/{code}",([FromRoute] string code)=>{
+app.MapDelete("/products/{code}",([FromRoute] string code)=>{
   ProductRepository.Delete(code);
+  return Results.Ok();
 
 });
 
@@ -40,6 +45,7 @@ app.MapDelete("/deleteproduct/{code}",([FromRoute] string code)=>{
 
   
 app.Run();
+
 
 
 public class Product{
