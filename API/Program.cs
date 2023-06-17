@@ -2,7 +2,7 @@ using API.context;
 using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ApplicationDbContext>();
+builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["Database:SqlServer"]);
 var app = builder.Build();
 
 // app.MapGet("/", () => "Hello World!");
@@ -10,10 +10,26 @@ var app = builder.Build();
 // app.MapGet("AddHeader",(HttpResponse response)=>{
 //   response.Headers.Add("Teste","Pedro Santana");
 //   return "Header adicionado para aparecer na mensagem";
-app.MapPost("/products",(Product product)=>{
-//   });
-  ProductRepository.Add(product);
-  return Results.Created($"/products/{product.Code}",product);
+app.MapPost("/products",(ProductRequest productRequest,ApplicationDbContext context)=>{ 
+  var category=context.Category.Where(c=>c.Id==productRequest.CategoryId).First();
+  var product=new Product{
+    Code=productRequest.Code,
+    Name=productRequest.Name,
+    Description=productRequest.Description,
+    Category=category
+  };
+  if(productRequest.Tags!= null){
+
+    product.Tags=new List<Tag>();
+    foreach(var tag in productRequest.Tags){
+      product.Tags.Add(new Tag{
+        Name=tag
+      });
+    }
+  }
+  context.Products.Add(product);
+  context.SaveChanges();
+  return Results.Created($"/products/{product.Id}",product.Id);
 });
 //Route params /product/123
 app.MapGet("/products/{code}",([FromRoute]string code)=>{
@@ -47,42 +63,3 @@ app.MapDelete("/products/{code}",([FromRoute] string code)=>{
 
   
 app.Run();
-
-
-public class Category{
-  public int Id { get; set; }
-  public string? Name { get; set; }
-}
-
-public class Tag{
-  public int Id { get; set; }
-  public string Name { get; set; }
-  public int ProductId { get; set; }
-}
-public class Product{
-  public int Id { get; set; }
-  public string? Code { get; set; }
-  public string? Name { get; set; }
-  public string? Description { get; set; } 
-  public int CategoryId { get; set; }
-  public Category Category { get; set; }
-  public List<Tag> Tags { get; set; }
-}
-
-public static class ProductRepository{
-  public static List<Product>? Products { get; set; }
-
-  public static void Add(Product product){
-    if(Products == null){
-      Products = new List<Product>();
-    }
-    Products.Add(product);
-  } 
-  public static Product GetBy(string code){
-    return Products.FirstOrDefault(x=>x.Code == code );
-  }
-  public static string Delete(string code){
-    var producsToDelete=Products?.Remove(GetBy(code));
-    return "Produto Deletado com sucesso";
-  }
-}
