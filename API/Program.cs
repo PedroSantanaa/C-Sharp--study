@@ -1,5 +1,6 @@
 using API.context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["Database:SqlServer"]);
@@ -32,20 +33,36 @@ app.MapPost("/products",(ProductRequest productRequest,ApplicationDbContext cont
   return Results.Created($"/products/{product.Id}",product.Id);
 });
 //Route params /product/123
-app.MapGet("/products/{code}",([FromRoute]string code)=>{
-  var product = ProductRepository.GetBy(code);
+app.MapGet("/products/{id}",([FromRoute]int id,ApplicationDbContext context)=>{
+  var product = context.Products.Include(p=>p.Category).Include(p=>p.Tags).Where(p=>p.Id==id).First();
   if(product!=null){
     return Results.Ok(product);
   }
   return Results.NotFound();
 });
-app.MapPut("/products/",(Product product)=>{
-  var productEdit = ProductRepository.GetBy(product.Code);
-  productEdit.Name = product.Name;
-  return Results.Ok(productEdit);
+app.MapPut("/products/{id}",([FromRoute] int id,ProductRequest productRequest,ApplicationDbContext context)=>{
+  var product = context.Products.Include(p=>p.Tags).Where(p=>p.Id==id).First();
+  product.Code=productRequest.Code;
+  product.Name=productRequest.Name;
+  product.Description=productRequest.Description;
+  var category=context.Category.Where(c=>c.Id==productRequest.CategoryId).First();
+  product.Category=category;
+  if(productRequest.Tags!= null){
+
+    product.Tags=new List<Tag>();
+    foreach(var tag in productRequest.Tags){
+      product.Tags.Add(new Tag{
+        Name=tag
+      });
+    }
+  }
+  context.SaveChanges();
+  return Results.Ok();
 });
-app.MapDelete("/products/{code}",([FromRoute] string code)=>{
-  ProductRepository.Delete(code);
+app.MapDelete("/products/{id}",([FromRoute] int id,ApplicationDbContext context)=>{
+  var product = context.Products.Where(p=>p.Id==id).First();
+  context.Products.Remove(product);
+  context.SaveChanges();
   return Results.Ok();
 
 });
