@@ -14,7 +14,7 @@ public class CategoryPost
         var category = new Category(categoryRequest.Name,"Test","TestEdited");
         if(!category.IsValid)
         {
-            return Results.BadRequest(category.Notifications);
+            return Results.ValidationProblem(category.Notifications.ConvertToProblemDetails());
         }
         context.Categories.Add(category);
         context.SaveChanges();
