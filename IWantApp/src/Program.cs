@@ -1,8 +1,11 @@
 using IWantApp.Endpoints.Categories;
+using IWantApp.Endpoints.Employees;
 using IWantApp.Infra.Data;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["ConnectionString:IWantDb"]);
+builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -22,6 +25,7 @@ app.UseHttpsRedirection();
 
 //POST
 app.MapMethods(CategoryPost.Template, CategoryPost.Methods, CategoryPost.Handle);
+app.MapMethods(EmployeePost.Template, EmployeePost.Methods, EmployeePost.Handle);
 //GET ALL
 app.MapMethods(CategoryGetAll.Template, CategoryGetAll.Methods, CategoryGetAll.Handle);
 //PUT
